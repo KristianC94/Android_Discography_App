@@ -1,0 +1,56 @@
+<resources>
+
+    <!-- App title -->
+    <string name="app_name">14103017 Discogs</string>
+
+    <!-- Key and Secret for Twitter Kit -->
+    <string name="com.twitter.sdk.android.CONSUMER_KEY">E6X180YByYxxu5AKmatGOvHTI</string>
+    <string name="com.twitter.sdk.android.CONSUMER_SECRET">GPchMHHD6gk1tQRtQcp5nHHVl2k3UEsCkLT88n5BPRxSG0HPqG</string>
+
+    <!-- App ID for Facebook SDK -->
+    <string name="facebook_app_id">242977539583201</string>
+
+    <!-- Strings for YouTube player -->
+    <string name="player_error">Error initializing YouTube player: %s</string>
+    <string name="seek_to">Jump To</string>
+    <string name="seek_to_hint">Seconds</string>
+
+    <!-- App string resources -->
+    <string name="welcome">Welcome</string>
+    <string name="discog_app">Discography App</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="moduleTxt">Mobile and Web Technologies II</string>
+    <string name="modcodeTxt">CMP6169</string>
+    <string name="create_account">Create Account</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="register">Register</string>
+    <string name="go">Go</string>
+    <string name="srch_discog">Search Discography</string>
+    <string name="svd_discog">Saved discography</string>
+    <string name="dev_text">Developed by Kristian Curcic</string>
+    <string name="logout">Logout</string>
+    <string name="listIV_desc">Image of artist/album</string>
+    <string name="artist_img">Image of the artist</string>
+    <string name="album_img">Image of the album cover</string>
+    <string name="search">Search</string>
+    <string name="artists">Artists</string>
+    <string name="albums">Albums</string>
+    <string name="artist_name">Artist Name</string>
+    <string name="see_releases">See releases</string>
+    <string name="artist_profile">Artist Profile</string>
+    <string name="members">Members</string>
+    <string name="fake_email">fake@example.com</string>
+    <string name="discog_credit">Discography search powered by Discogs API</string>
+    <string name="not_registered">Not registered? Click here</string>
+    <string name="s14103017">S14103017</string>
+    <string name="tracklist">Tracklist</string>
+    <string name="album_name">Album name</string>
+    <string name="track_name">Track name</string>
+    <string name="length">Length</string>
+    <string name="album_artist">Album artist</string>
+    <string name="video_title">Video title</string>
+    <string name="lastfm_credit">Artist releases powered by Last FM API</string>
+
+</resources>

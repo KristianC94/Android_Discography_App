@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "603100311577",
+    "firebase_url": "https://discogsapp-2e0a8.firebaseio.com",
+    "project_id": "discogsapp-2e0a8",
+    "storage_bucket": "discogsapp-2e0a8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:603100311577:android:a06e172fd778671d",
+        "android_client_info": {
+          "package_name": "mobwebtech2.com.bcu.kristian.discogsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "603100311577-ju3ctl5e02l1h5kvkd0ahn8b5hbbp9ql.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIqwbWbrSAfLo5bfsm-nDK-Q7XW2tIQSY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

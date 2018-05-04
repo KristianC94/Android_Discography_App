@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <LinearLayout
+        android:id="@+id/topWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/artistImg"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginLeft="5dp"
+            android:contentDescription="@string/artist_img"
+            android:src="@mipmap/noimg" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/artistName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:textColor="@android:color/white"
+                android:text="@string/artist_name"/>
+
+            <TextView
+                android:id="@+id/artistRealName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/artistName"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textAlignment="center"
+                android:textSize="17sp"
+                android:textColor="@color/colorPrimary"
+                android:text="" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/profileTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topWrapper"
+        android:layout_marginTop="7dp"
+        android:textAlignment="center"
+        android:maxLines="7"
+        android:scrollbars="vertical"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:text="@string/artist_profile" />
+
+    <TextView
+        android:id="@+id/profileTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profileTitle"
+        android:layout_marginTop="3dp"
+        android:textAlignment="center"
+        android:maxLines="7"
+        android:scrollbars="vertical"
+        android:textSize="17sp"
+        android:textColor="@android:color/white"
+        android:text="@string/artist_profile" />
+
+    <TextView
+        android:id="@+id/membersTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profileTxt"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"
+        android:maxLines="7"
+        android:scrollbars="vertical"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:text="@string/members" />
+
+    <ListView
+        android:id="@+id/memberList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/white"
+        android:layout_below="@+id/membersTitle"
+        android:layout_marginTop="3dp"
+        android:dividerHeight="1dp"
+        android:padding="2dp"
+        android:focusable="true"
+        android:clickable="true">
+
+    </ListView>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/artistFABMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        app:menu_animationDelayPerItem="50"
+        app:menu_backgroundColor="#80000000"
+        app:menu_buttonSpacing="0dp"
+        app:menu_colorNormal="@color/colorAccent"
+        app:menu_colorPressed="@color/colorPrimary"
+        app:menu_colorRipple="@color/colorPrimary"
+        app:menu_fab_size="normal"
+        app:menu_icon="@mipmap/plus"
+        app:menu_labels_colorNormal="#333333"
+        app:menu_labels_colorRipple="#66FFFFFF"
+        app:menu_labels_cornerRadius="3dp"
+        app:menu_labels_margin="0dp"
+        app:menu_labels_padding="8dp"
+        app:menu_labels_position="left"
+        app:menu_labels_textColor="#FFFFFF"
+        app:menu_labels_textSize="14sp"
+        app:menu_openDirection="up">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/artistSaveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/star"
+            app:fab_colorNormal="#ffcc33"
+            app:fab_size="mini"
+            app:fab_label="Save artist" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/seeAlbumsBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/cd"
+            app:fab_colorNormal="@color/colorPrimary"
+            app:fab_size="mini"
+            app:fab_label="See releases" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/artistTweetBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/twitter"
+            app:fab_colorNormal="#00aced"
+            app:fab_size="mini"
+            app:fab_label="Tweet this" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/artistFbBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/facebook"
+            app:fab_colorNormal="#3b5998"
+            app:fab_size="mini"
+            app:fab_label="Post this" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/artistHomeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/home"
+            app:fab_colorNormal="#FFFFFF"
+            app:fab_size="mini"
+            app:fab_label="Back to home" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <TextView
+        android:id="@+id/videoListTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:text="Videos from album" />
+
+    <ListView
+        android:id="@+id/videoTitlesList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/videoListTitle"
+        android:divider="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:dividerHeight="2dp"
+        android:padding="2dp"
+        android:focusable="true"
+        android:clickable="true">
+
+    </ListView>
+
+</RelativeLayout>

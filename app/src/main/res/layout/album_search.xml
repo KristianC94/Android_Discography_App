@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <LinearLayout
+        android:id="@+id/searchWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/black"
+        android:layout_alignParentTop="true"
+        android:padding="2dp" >
+
+        <EditText
+            android:id="@+id/albumSearch"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:inputType="textCapWords"
+            android:maxLength="30"
+            android:textCursorDrawable="@null"
+            android:textColorHint="@color/colorPrimary"
+            android:textColor="@color/colorPrimary"
+            android:backgroundTint="@color/colorPrimary"
+            android:hint="@string/search"
+            android:imeOptions="actionDone" />
+
+        <Button
+            android:id="@+id/albumSearchBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="8dp"
+            android:background="@android:color/white"
+            android:text="@string/go" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchWrapper"
+        android:layout_marginTop="55dp"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/black"
+        android:padding="2dp">
+
+        <ListView
+            android:id="@+id/albumList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@android:color/white"
+            android:layout_marginTop="5dp"
+            android:dividerHeight="2dp"
+            android:padding="2dp"
+            android:focusable="true"
+            android:clickable="true">
+
+        </ListView>
+
+    </LinearLayout>
+
+</RelativeLayout>
